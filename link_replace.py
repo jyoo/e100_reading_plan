@@ -16,7 +16,7 @@ def bg_link(verse, version='all'):
         for ver in versions:
             query_str['search'] = verse
             query_str['version'] = ver
-            output += ' [{0}] ({1})'.format(ver,bg_pre + parse.urlencode(query_str))
+            output += ' [{0}]({1})'.format(ver,bg_pre + parse.urlencode(query_str))
         return(output)
 
 if __name__ == '__main__':
